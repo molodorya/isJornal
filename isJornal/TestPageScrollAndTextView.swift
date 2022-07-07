@@ -19,13 +19,17 @@ class TestPageScrollAndTextView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "123"
+        
+         
+        
         
         textView.text = textForPage
         textView.adjustUITextViewHeight()
         
-        
         contentViewHeight.constant = textView.frame.height + 300
         
+        textView.textColor = .darkGray
         textView.backgroundColor = .clear
         
         view.backgroundColor = UIColor.init(red: 251/255, green: 251/255, blue: 251/255, alpha: 1)

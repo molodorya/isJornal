@@ -9,10 +9,7 @@ import UIKit
 
 class Home: UIViewController {
     
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var userImage: UIImageView!
-    
-    @IBOutlet weak var btnUser: UIButton!
+   
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,27 +19,10 @@ class Home: UIViewController {
         super.viewDidLoad()
         
         
-        let navigationBar = self.navigationController?.navigationBar
-        navigationBar?.setBackgroundImage(UIImage(), for: .default)
-        navigationBar?.shadowImage = UIImage()
-        navigationBar?.backgroundColor = UIColor.clear
-        
-        headerView.layer.cornerRadius = 35
-        headerView.layer.borderWidth = 0.1
-        headerView.layer.borderColor = UIColor.black.cgColor
-        
-        headerView.layer.shadowColor = UIColor.black.cgColor
-        headerView.layer.shadowOffset = .zero
-        headerView.layer.shadowOpacity = 0.1
-        headerView.layer.shadowRadius = 5
-        
-        
-        userImage.layer.cornerRadius = 30
-        userImage.layer.borderWidth = 0.1
-        userImage.layer.borderColor = UIColor.black.cgColor
-        userImage.contentMode = .scaleAspectFill
-        
-        btnUser.contentHorizontalAlignment = .left
+//        let navigationBar = self.navigationController?.navigationBar
+//        navigationBar?.setBackgroundImage(UIImage(), for: .default)
+//        navigationBar?.shadowImage = UIImage()
+//        navigationBar?.backgroundColor = UIColor.clear
         
         
         tableView.delegate = self

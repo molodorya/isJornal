@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="APK-CT-LCO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HuS-2n-oKG">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -100,7 +100,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-bv-fsf">
-                                                <rect key="frame" x="19.999999999999996" y="390" width="33.666666666666657" height="15"/>
+                                                <rect key="frame" x="20" y="390" width="34" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -176,7 +176,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7XB-yY-BMF">
-                                <rect key="frame" x="0.0" y="208" width="390" height="636"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="35" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeCell" rowHeight="340" id="nvW-6r-zGI" customClass="HomeCell" customModule="isJornal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="340"/>
@@ -267,71 +268,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOq-BM-6dR">
-                                <rect key="frame" x="20" y="113" width="350" height="70"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-Ru-TKq">
-                                        <rect key="frame" x="310" y="20" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="4cK-GX-vbB"/>
-                                            <constraint firstAttribute="width" constant="30" id="jSz-Nh-QUD"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle.fill" catalog="system"/>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="opn-vS-Wrz">
-                                        <rect key="frame" x="5" y="5" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="YP4-R9-pah"/>
-                                            <constraint firstAttribute="height" constant="60" id="qRs-bz-05f"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtA-9G-80S">
-                                        <rect key="frame" x="70" y="12.333333333333332" width="235" height="45.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="molodorya" subtitle="3 Публикации • 13 Подписчиков " titlePadding="0.0" titleAlignment="leading">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
-                                            <fontDescription key="subtitleFontDescription" type="system" pointSize="10"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="s63-XL-2UD" kind="show" id="49i-KI-8O8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="opn-vS-Wrz" firstAttribute="centerY" secondItem="mOq-BM-6dR" secondAttribute="centerY" id="4eu-fl-bKq"/>
-                                    <constraint firstItem="IjM-Ru-TKq" firstAttribute="leading" secondItem="PtA-9G-80S" secondAttribute="trailing" constant="5" id="9Xz-Pl-RUO"/>
-                                    <constraint firstItem="opn-vS-Wrz" firstAttribute="leading" secondItem="mOq-BM-6dR" secondAttribute="leading" constant="5" id="BLR-Gf-66Q"/>
-                                    <constraint firstItem="PtA-9G-80S" firstAttribute="centerY" secondItem="mOq-BM-6dR" secondAttribute="centerY" id="NdV-wp-fbo"/>
-                                    <constraint firstAttribute="height" constant="70" id="SPi-rK-Dt1"/>
-                                    <constraint firstItem="IjM-Ru-TKq" firstAttribute="centerY" secondItem="mOq-BM-6dR" secondAttribute="centerY" id="aUL-y8-BTE"/>
-                                    <constraint firstAttribute="trailing" secondItem="IjM-Ru-TKq" secondAttribute="trailing" constant="10" id="eW9-Fp-Xcf"/>
-                                    <constraint firstItem="PtA-9G-80S" firstAttribute="leading" secondItem="opn-vS-Wrz" secondAttribute="trailing" constant="5" id="x8T-Hf-4EH"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7XB-yY-BMF" firstAttribute="top" secondItem="mOq-BM-6dR" secondAttribute="bottom" constant="25" id="81w-68-CrF"/>
                             <constraint firstItem="7XB-yY-BMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cR5-n9-JXB"/>
-                            <constraint firstItem="mOq-BM-6dR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j2l-s6-o5d"/>
-                            <constraint firstAttribute="trailing" secondItem="mOq-BM-6dR" secondAttribute="trailing" constant="20" id="jJI-AA-uGZ"/>
                             <constraint firstAttribute="bottom" secondItem="7XB-yY-BMF" secondAttribute="bottom" id="q2T-Vg-Y1j"/>
-                            <constraint firstItem="mOq-BM-6dR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="vMa-wm-wTc"/>
+                            <constraint firstItem="7XB-yY-BMF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rm9-zB-7Vl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7XB-yY-BMF" secondAttribute="trailing" id="veb-SS-Xhg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Главная" id="4OE-tX-X3a">
                         <barButtonItem key="backBarButtonItem" title=" " id="qxL-uj-nML"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="plus" catalog="system" id="N0j-RT-mA2">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="fNc-Zv-Hbo" kind="show" id="PLo-LQ-dBi"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Item" image="plus" catalog="system" id="N0j-RT-mA2">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="fNc-Zv-Hbo" kind="show" id="PLo-LQ-dBi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="person.circle.fill" catalog="system" id="msf-E3-kV6">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="APK-CT-LCO" kind="show" id="KLm-e1-tuu"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="Bpj-ef-NBL">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -340,10 +302,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnUser" destination="PtA-9G-80S" id="qdA-du-y72"/>
-                        <outlet property="headerView" destination="mOq-BM-6dR" id="rGz-fF-pBW"/>
                         <outlet property="tableView" destination="7XB-yY-BMF" id="aul-R8-981"/>
-                        <outlet property="userImage" destination="opn-vS-Wrz" id="Bh1-uY-wIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -359,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-uD-Ryw">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlQ-LT-wzP">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
@@ -372,13 +331,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nikita Molodorya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0p-Xm-KYg">
-                                                <rect key="frame" x="96.333333333333329" y="140" width="197.33333333333337" height="30"/>
+                                                <rect key="frame" x="96.666666666666686" y="140" width="197" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Любитель интересных статей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-kS-8df">
-                                                <rect key="frame" x="81.333333333333329" y="175" width="227.66666666666669" height="18"/>
+                                                <rect key="frame" x="81" y="175" width="228" height="18"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -437,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wte-zD-B0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.9230769230769" y="812.55924170616106"/>
+            <point key="canvasLocation" x="1131" y="800"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UjH-2Y-aP6">
@@ -574,15 +533,18 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кто такой Навальный?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-TN-Tdj">
-                                <rect key="frame" x="30" y="303" width="276.33333333333331" height="30"/>
+                                <rect key="frame" x="30" y="303" width="276.66666666666669" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7E-ka-CLC">
-                                <rect key="frame" x="30" y="338" width="330" height="437"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7E-ka-CLC">
+                                <rect key="frame" x="30" y="338" width="330" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Владимир Путин категорически отказывается произносить вслух фамилию Алексея Навального. Если российскому президенту приходится упоминать оппозиционного политика, он прибегает к иносказаниям. "Тот персонаж", "Саакашвили российского формата", "этот господин" или просто "он".
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EUt-3O-v4K"/>
+                                </constraints>
+                                <string key="text">Владимир Путин категорически отказывается произносить вслух фамилию Алексея Навального. Если российскому президенту приходится упоминать оппозиционного политика, он прибегает к иносказаниям. "Тот персонаж", "Саакашвили российского формата", "этот господин" или просто "он".
 
 Похоже, имя Навального стало для российского президента своеобразным табу. DW обратилась с просьбой к двум немецким экспертам прокомментировать этот странный феномен.
 
@@ -590,7 +552,7 @@
 
 Возникает ощущение, что Путин боится Навального, потому что невольно задаешь себе вопрос: если Путин думает, что у Навального нет шанса, тогда почему он не хочет победить его в публичном пространстве? Почему он не хочет выиграть у него в честной борьбе? 
 
-Неудивительно, что в настоящий момент предвыборная борьба настолько сфокусирована на Навальном. Он представляет опасность для коррупционеров и властных элит и, несомненно, является Немезидой для Путина и его окружения.</mutableString>
+Неудивительно, что в настоящий момент предвыборная борьба настолько сфокусирована на Навальном. Он представляет опасность для коррупционеров и властных элит и, несомненно, является Немезидой для Путина и его окружения.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -611,7 +573,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxD-W7-HHx">
-                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="28.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="28.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Nikita Molodorya">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
@@ -652,7 +614,6 @@
                             <constraint firstItem="t7E-ka-CLC" firstAttribute="top" secondItem="Xco-TN-Tdj" secondAttribute="bottom" constant="5" id="9QU-Iz-hNr"/>
                             <constraint firstItem="njm-fk-WmM" firstAttribute="leading" secondItem="z4y-PR-lWP" secondAttribute="leading" id="RXD-Ml-xcF"/>
                             <constraint firstItem="Xco-TN-Tdj" firstAttribute="leading" secondItem="z4y-PR-lWP" secondAttribute="leading" constant="30" id="bFS-4v-1T7"/>
-                            <constraint firstItem="N83-VE-Ct1" firstAttribute="top" secondItem="t7E-ka-CLC" secondAttribute="bottom" id="jz5-Lz-kNv"/>
                             <constraint firstItem="N83-VE-Ct1" firstAttribute="leading" secondItem="z4y-PR-lWP" secondAttribute="leading" constant="30" id="k2f-9g-Ucj"/>
                             <constraint firstItem="z4y-PR-lWP" firstAttribute="trailing" secondItem="N83-VE-Ct1" secondAttribute="trailing" constant="30" id="kQw-j1-yP1"/>
                             <constraint firstItem="z4y-PR-lWP" firstAttribute="bottom" secondItem="N83-VE-Ct1" secondAttribute="bottom" id="qOt-J7-n16"/>
@@ -745,14 +706,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="850"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navalny" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-sq-Vpc">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="Iu1-ZX-Fk2"/>
+                                                    <constraint firstAttribute="height" constant="390" id="Iu1-ZX-Fk2"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB2-C2-U06">
-                                                <rect key="frame" x="20" y="316.33333333333331" width="350" height="35"/>
+                                                <rect key="frame" x="20" y="506.33333333333326" width="350" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Политика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-ae-7LP">
                                                         <rect key="frame" x="293" y="0.0" width="57" height="15"/>
@@ -761,20 +722,20 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Августа 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cya-HD-RuC">
-                                                        <rect key="frame" x="256" y="15" width="94" height="15"/>
+                                                        <rect key="frame" x="256" y="15.000000000000057" width="94" height="15"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cZ-TI-F0U">
-                                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="28.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="28.666666666666668"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Nikita Molodorya">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97a-aG-Egm">
-                                                        <rect key="frame" x="0.0" y="34" width="350" height="1"/>
+                                                        <rect key="frame" x="0.0" y="34.000000000000057" width="350" height="1"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="HFe-3z-EgX"/>
@@ -795,7 +756,7 @@
                                                 </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="23rewfwvgr324fg234gv345gc5r3tvgwerbvwerbvwrtberthertbhr4vg23rcf2r2deefr34erberbwergvqerwfqerg" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-w1-yQ2">
-                                                <rect key="frame" x="25" y="225.00000000000003" width="340" height="66.333333333333343"/>
+                                                <rect key="frame" x="25" y="415" width="340" height="66.333333333333314"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -837,6 +798,12 @@
                             <constraint firstAttribute="bottom" secondItem="aCd-Yv-cvT" secondAttribute="bottom" id="hgg-hH-ejj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eOa-F0-7ha">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="heart" catalog="system" id="GfI-C0-YLg"/>
+                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="wQe-ai-3Ov"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="PwH-il-QeR" id="G10-zm-hF2"/>
                         <outlet property="contentViewHeight" destination="2Qw-sC-43w" id="dCO-dF-MIe"/>
@@ -846,7 +813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pue-Y5-HPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5095.3846153846152" y="160.66350710900474"/>
+            <point key="canvasLocation" x="1702" y="87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GHY-bJ-aq7">
@@ -869,14 +836,16 @@
     </scenes>
     <resources>
         <image name="addPhoto" width="375" height="223"/>
-        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="keyboard.chevron.compact.down" catalog="system" width="128" height="102"/>
         <image name="kremlin" width="1888" height="1200"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="myPhoto" width="1086" height="724"/>
         <image name="navalny" width="375" height="223"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="smoke" width="60" height="60"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
